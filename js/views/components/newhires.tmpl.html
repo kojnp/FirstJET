@@ -1,0 +1,81 @@
+
+<div style="width:150px;">
+    
+    New Hires:
+
+    <ul id="newhires-div" aria-label="list with static data" 
+           data-bind="ojComponent: {component: 'ojListView', selectionMode: 'multiple'}">
+        <li id="jan">
+            
+            <div class="container">
+                <div>
+                    <span class="name">January</span>
+                </div>
+            </div>
+            
+            <div id="gauge" title="Jan new hires: 34" 
+                    data-bind="ojComponent: {
+                        component: 'ojStatusMeterGauge', 
+                        min: 0, 
+                        max: 100, 
+                        color: '#4286f4',
+                        value: 34, 
+                        metricLabel: {rendered: 'off'},
+                        plotArea: {rendered: 'on'},
+                        indicatorSize: 0.5, 
+                        readOnly: true
+                    }"
+                 style="margin-top:5px;margin-bottom:5px;
+                 height:20px;width:100%;">
+            </div>
+        </li>
+        <li id="feb">
+            
+            <div class="container">
+                <div>
+                    <span class="name">February</span>
+                </div>
+            </div>
+            
+            <div id="gauge" title="Feb new hires: 10" 
+                    data-bind="ojComponent: {
+                        component: 'ojStatusMeterGauge', 
+                        min: 0, 
+                        max: 100, 
+                        value: 10, 
+                        color: '#4286f4',
+                        metricLabel: {rendered: 'off'},
+                        plotArea: {rendered: 'on'},
+                        indicatorSize: 0.5, 
+                        readOnly: true
+                    }"
+                 style="margin-top:5px;margin-bottom:5px;
+                 height:20px;width:100%;">
+            </div>
+        </li>
+        <li id="mar">
+            <div class="container">
+                <div>
+                    <span class="name">March</span>
+                </div>
+            </div>
+            
+            <div id="gauge" title="March new hires: 66" 
+                    data-bind="ojComponent: {
+                        component: 'ojStatusMeterGauge', 
+                        min: 0, 
+                        color: '#4286f4',
+                        max: 100, 
+                        value: 66, 
+                        metricLabel: {rendered: 'off'},
+                        plotArea: {rendered: 'on'},
+                        indicatorSize: 0.5, 
+                        readOnly: true
+                    }"
+                 style="margin-top:5px;margin-bottom:5px;
+                 height:20px;width:100%;">
+            </div>
+        </li>
+    </ul>
+    
+</div>
